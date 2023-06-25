@@ -1,0 +1,39 @@
+{
+  "main": "src/ChatGPTClient.js",
+  "types": "src/ChatGPTClient.d.ts",
+  "dependencies": {
+    "@dqbd/tiktoken": "^1.0.2",
+    "@waylaidwanderer/fetch-event-source": "^3.0.1",
+    "cjstoesm": "^2.1.2",
+    "fetch-undici": "^3.0.1",
+    "keyv": "^4.5.2",
+    "node-fetch": "^3.3.1",
+    "undici": "^5.21.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.21.2",
+    "@babel/preset-env": "^7.20.2",
+    "@types/node": "^18.15.3",
+    "typescript": "^5.0.2"
+  },
+  "type": "commonjs",
+  "name": "@weykon/gpt-ts",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "build:main": "babel . -d main"
+  },
+  "keywords": [
+    "chatgpt",
+    "typescript",
+    "nodejs",
+    "chatgpt api",
+    "gpt"
+  ],
+  "author": "weykon <635883092@qq.com>",
+  "license": "ISC",
+  "description": "gpt api using typescript on nodejs"
+}
